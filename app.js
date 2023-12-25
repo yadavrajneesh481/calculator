@@ -44,7 +44,7 @@ app.get("/division/:num1/:num2", (req, res) => {
       const num2 = req.params.num2;
       const n2 = parseInt(num2);
       res.status(200).json({
-        multiply: n1 * n2,
+        multiply: "Multiplication result is " + n1 * n2,
       });
     });
     res.status(200).json({
